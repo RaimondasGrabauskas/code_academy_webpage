@@ -1,0 +1,97 @@
+/* variables */
+
+:root {
+  --text-color: #999999;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --h-element-color: white;
+  --orange-color: rgb(206, 135, 3);
+  --bg-color: rgb(48, 47, 47);
+  --nav-a-color: white;
+}
+
+/* header section */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  z-index: 5;
+}
+
+.header-flex {
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(100% - 3rem);
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-nav a {
+  color: var(--nav-a-color);
+}
+
+/* kai paspaudem ant burgerio tai main-van gauna klase active */
+.main-nav.active {
+  display: block;
+}
+
+.main-logo {
+  font-size: 2rem;
+  color: var(--orange-color);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.main-nav-toggle {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--h-element-color);
+}
+
+/* hero section */
+
+.hero {
+  text-align: center;
+  padding-top: 10%;
+  width: 100%;
+  margin-top: 30px;
+  background-image: url("../pictures/bg-skater-img2.jpg");
+  padding-bottom: 50px;
+  object-fit: cover;
+  background-size: 100%;
+}
+
+.hero-title-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-tile-h1 {
+  text-transform: uppercase;
+  color: var(--h-element-color);
+  padding-bottom: 5px;
+}
+
+.hero-title-h5 {
+  color: var(--h-element-color);
+  padding-bottom: 60px;
+}
+
+.hero__button {
+  border: 2px solid white;
+  border-radius: 5px;
+  opacity: 0.9;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  color: var(--nav-a-color);
+}
+
+.hero__button:hover {
+  background-color: white;
+  color: var(--text-color);
+}

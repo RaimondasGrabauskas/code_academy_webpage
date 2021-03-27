@@ -1,0 +1,21 @@
+:root {
+  --text-color: #999999;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --h-element-color: white;
+  --orange-color: rgb(206, 135, 3);
+  --bg-color: rgb(48, 47, 47);
+  --nav-a-color: white;
+}
+
+.container {
+  background-color: var(--bg-color);
+  margin: 0 auto;
+}
+
+p {
+  color: var(--text-color);
+}
+
+body {
+  font-family: var(--main-font);
+}
